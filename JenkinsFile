@@ -25,7 +25,8 @@ pipeline {
     * ProductionEnvironment -> Where your apps are live.
     */
     DevelopmentEnvironment = 'Development'
-    RegressionEnvironment = 'Regression'
+	// Currently only 2 environments are available so tests are performed in Production (name should be adjusted)
+    RegressionEnvironment = 'Production'
     AcceptanceEnvironment = 'Acceptance'
     PreProductionEnvironment = 'Pre-Production'
     ProductionEnvironment = 'Production'
