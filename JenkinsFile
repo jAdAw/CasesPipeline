@@ -27,9 +27,9 @@ pipeline {
     DevelopmentEnvironment = 'Development'
 	// Currently only 2 environments are available so tests are performed in Production (name should be adjusted)
     RegressionEnvironment = 'Production'
-    AcceptanceEnvironment = 'Acceptance'
-    PreProductionEnvironment = 'Pre-Production'
-    ProductionEnvironment = 'Production'
+    //AcceptanceEnvironment = 'Acceptance'
+    //PreProductionEnvironment = 'Pre-Production'
+    //ProductionEnvironment = 'Production'
     // Regression URL Specification
     ProbeEnvironmentURL = 'https://accentureportugal-dev.outsystemscloud.com/'
     BddEnvironmentURL = 'https://accentureportugal-dev.outsystemscloud.com/'
