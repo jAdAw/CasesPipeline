@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'python:3.8.1' } }
+  agent any
   parameters {
     // App List Parameters -> automatically filled by LT Trigger plugin
     string(name: 'ApplicationScope', defaultValue: '', description: 'Comma-separated list of LifeTime applications to deploy.')
