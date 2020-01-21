@@ -40,14 +40,12 @@ pipeline {
         echo "Create ${env.ArtifactsFolder} Folder"
         sh "mkdir ${env.ArtifactsFolder}"
         // Only the virtual environment needs to be installed at the system level
-	echo "Install Python3"
-	sh "pyenv install 3.7.3"
         echo "Install Python Virtual environments"
-        sh 'pip3 install -q -I virtualenv --user'
+        sh 'pip install -q -I virtualenv --user'
         // Install the rest of the dependencies at the environment level and not the system level
         withPythonEnv('python') {
           echo "Install Python requirements"
-          sh 'pip3 install -U outsystems-pipeline'
+          sh 'pip install -U outsystems-pipeline'
         }
       }
     }
